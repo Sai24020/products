@@ -1,0 +1,123 @@
+.page {
+    padding: 2rem;
+  }
+  
+  .main {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  
+  .sortDropdown {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .searchButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .searchButton:hover {
+    background-color: #0056b3;
+  }
+
+  /* Styla taggfilter-knapparna */
+.tagFilters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Skapar mellanrum mellan knapparna */
+  margin-top: 20px;
+}
+
+.tagFilters button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Färg för varje knapp */
+.tagFilters button:nth-child(1) {
+  background-color: #ff6f61; /* Meat */
+  color: white;
+}
+
+.tagFilters button:nth-child(2) {
+  background-color: #6f61ff; /* Beauty */
+  color: white;
+}
+
+.tagFilters button:nth-child(3) {
+  background-color: #ffcc00; /* Perfumes */
+  color: white;
+}
+
+.tagFilters button:nth-child(4) {
+  background-color: #4caf50; /* Fruits */
+  color: white;
+}
+
+.tagFilters button:nth-child(5) {
+  background-color: #ff9800; /* Cat food */
+  color: white;
+}
+
+.tagFilters button:nth-child(6) {
+  background-color: #3f51b5; /* Dog food */
+  color: white;
+}
+
+.tagFilters button:nth-child(7) {
+  background-color: #229fa3; /* Furniture */
+  color: white;
+}
+
+.tagFilters button:nth-child(8) {
+  background-color: #80842f; /* vegetables */
+  color: white;
+}
+
+.tagFilters button:nth-child(9) {
+  background-color: #c22690; /* cooking essentials */
+  color: white;
+}
+
+.tagFilters button:nth-child(10) {
+  background-color: #22a14c; /* desserts */
+  color: white;
+}
+
+.tagFilters button:nth-child(11) {
+  background-color: #dd8914; /* dairy */
+  color: white;
+}
+
+.tagFilters button:nth-child(12) {
+  background-color: #134d14; /* seafood */
+  color: white;
+}
+
+.tagFilters button:nth-child(13) {
+  background-color: #181081; /* condiments */
+  color: white;
+}
+/* Färgändring när användaren håller musen över knappen */
+.tagFilters button:hover {
+  opacity: 0.8;
+}
+
+  

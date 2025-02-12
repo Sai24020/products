@@ -1,0 +1,124 @@
+.cards {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin: 1rem;
+
+
+
+    .card {
+        display: grid;
+        background-color: #f2f2f2;
+        border: 1px solid grey;
+        padding: 0.5rem;
+
+        .imageWrapper {
+            .image {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        >ol,
+        >ul {
+            margin-inline-start: 1rem;
+        }
+
+        h3 {
+            padding-block-start: .5rem;
+            line-height: 1.5;
+        }
+    }
+}
+
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: small;
+    font-weight: 700;
+    margin-block: 0.5rem;
+}
+
+.tag {
+    background-color: #ced;
+    border-radius: 100vw;
+    padding-inline: 0.5em;
+    padding-block: 0.25em;
+
+}
+
+/*
+.cards {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin: 1rem;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .imageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .category {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e60023;
+  }
+  
+  .oldPrice {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 5px;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: small;
+    font-weight: 700;
+    margin-block: 0.5rem;
+  }
+  
+  .tag {
+    background-color: #ced;
+    border-radius: 100vw;
+    padding-inline: 0.5em;
+    padding-block: 0.25em;
+  }
+*/
