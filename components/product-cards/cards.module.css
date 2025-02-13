@@ -42,12 +42,16 @@
 }
 
 .tag {
-    background-color: #ced;
+    background-color: rgb(4, 26, 36);
     border-radius: 100vw;
     padding-inline: 0.5em;
     padding-block: 0.25em;
+    list-style: none;
+    color: rgb(43, 184, 132);
+    padding: 0.5rem;
+ }
 
-}
+
 
 /*
 .cards {

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { fetchRecipe } from "@/actions";
+import { fetchProduct } from "@/actions";
 import { Product } from "@/interfaces";
 import { CardList } from "@/components/product-cards/cards";
 import styles from "./search.module.css";
@@ -11,13 +11,19 @@ export default function SearchPage() {
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
   const [sortOption, setSortOption] = useState("");
   const [selectedTag, setSelectedTag] = useState<string>("");
-
-  useEffect(() => {
+  const [error, setError] = useState<string | null>(null);
+  
+  useEffect(() => { 
     async function loadProducts() {
-      const { products } = await fetchRecipe();
+      try {
+      const { products } = await fetchProduct();
       setProducts(products);
       setFilteredProducts(products);
+    } catch (err) {
+      setError("Kunde inte ladda productdata. Försök igen senare.");
+      console.error("Fetch error:", err);
     }
+  };
     loadProducts();
   }, []);
 
@@ -64,7 +70,7 @@ export default function SearchPage() {
           <button onClick={() => handleTagClick("condiments")}>Honung</button>
         </div>
 
-        {/* Sorteringsdropdown */}condiments
+        {/* Sorteringsdropdown */}
         <select
           value={sortOption}
           onChange={(e) => handleSort(e.target.value)}

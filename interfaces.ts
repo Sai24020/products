@@ -16,7 +16,7 @@ export interface Product {
   stock: number;
   tags: string[];
   brand: string;
-  images: string[]; // Ändrat från string till string[] eftersom API:et returnerar en array
+  images: string; // Ändrat från string till string[] eftersom API:et returnerar en array
   thumbnail: string;
   reviews: Reviews[];
 }
