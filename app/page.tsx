@@ -13,7 +13,7 @@ export default async function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <h1>MIN Proucts Store ..Toltalt är: {products.length}</h1>
+        <h1>MIN Proucts Store ..Totalt är: {products.length}</h1>
         
         <CardList products={products} />
       </main>
