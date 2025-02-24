@@ -1,7 +1,7 @@
 /*"use client";
 import { useState } from "react";  {useEffect}*/
 
-import { fetchProduct } from "@/actions";
+import { fetchProduct } from "@/app/actions";
 import styles from "./page.module.css";
 import { CardList } from "@/components/product-cards/cards";
 
